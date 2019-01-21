@@ -16,9 +16,6 @@
         android:contentDescription=""
         android:onClick="listen"
         tools:ignore="ContentDescription" />
-    <!--android:src="@drawable/nemo"-->
-    <!--style="@android:style/Widget.Holo.ImageButton"-->
-
 
     <TextView
         android:id="@+id/textView2"

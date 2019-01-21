@@ -32,8 +32,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
         t1 = (TextView) findViewById(R.id.textView2);
         imageButton = (ImageButton) findViewById(R.id.imageButton);
-        GlideDrawableImageViewTarget gifImage = new GlideDrawableImageViewTarget(imageButton);
-        Glide.with(this).load(R.drawable.bye).into(gifImage);
+
         tts = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
