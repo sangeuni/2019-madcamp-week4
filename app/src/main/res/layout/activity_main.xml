@@ -7,32 +7,25 @@
     android:background="#ffffff"
     tools:context=".MainActivity">
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="100dp"
-        android:layout_height="200dp"
-        android:layout_centerInParent="true"
-        android:clickable="false"
-        android:contentDescription=""
-        android:onClick="listen"
-        tools:ignore="ContentDescription" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="38dp"
-        android:autoText="false"
-        android:text="Click on Boo and speak"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="@android:color/holo_orange_dark"
-        android:textColorLink="@android:color/holo_orange_dark"
-        android:textSize="24sp"
-        android:visibility="visible"
+    <ImageButton
+        android:id="@+id/mic"
+        android:layout_width="91dp"
+        android:layout_height="281dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:background="@null"
+        android:onClick="listen"
+        android:padding="0sp"
+        android:scaleType="fitEnd"
+        android:src="@drawable/ico_mic" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/doggie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
 
 </RelativeLayout>

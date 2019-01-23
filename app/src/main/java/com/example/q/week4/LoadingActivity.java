@@ -13,11 +13,10 @@ public class LoadingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loading);
         LottieAnimationView lottieAnimationView = (LottieAnimationView)findViewById(R.id.lottie);
-        lottieAnimationView.setAnimation("dog.json");
+        lottieAnimationView.setAnimation("confetti.json");
         lottieAnimationView.loop(true);
         lottieAnimationView.playAnimation();
         startLoading();
-
     }
 
     private void startLoading() {
@@ -27,7 +26,8 @@ public class LoadingActivity extends AppCompatActivity {
             public void run() {
                 finish();
             }
-        },5000);
+        },2000);
     }
+    // 사랑해요 동민님 ㅎㅎ
 }
 
